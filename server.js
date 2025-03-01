@@ -1,5 +1,4 @@
 const express = require("express");
-const app = express();
 const {
   getAllCars,
   createCar,
@@ -7,18 +6,18 @@ const {
   updateCar,
   deleteCar,
 } = require("./controllers/index");
+const { logger } = require("./middleware");
 
+const app = express();
 const port = 4030;
 
-app.get("/api/v1/cars", getAllCars);
+app.use(logger);
 
-app.post("/api/v1/cars", createCar);
+app.use(express.json());
 
-app.get("/api/v1/cars/:id", getCar);
+app.route("/api/v1/cars").get(getAllCars).post(createCar);
 
-app.patch("/api/v1/cars/:id", updateCar);
-
-app.delete("/api/v1/cars/:id", deleteCar);
+app.route("/api/v1/cars/:id").get(getCar).patch(updateCar).delete(deleteCar);
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
