@@ -9,7 +9,7 @@ app.use(logger);
 
 app.use(express.json());
 
-app.use(carRoutes());
+app.use(carRoutes);
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
