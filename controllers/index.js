@@ -35,8 +35,19 @@ exports.getCar = (req, res) => {
 };
 
 exports.updateCar = (req, res) => {
+  const updatedData = req.body;
+
+  const updatedCar = { ...req.car, ...updatedData };
+
+  const index = cars.findIndex((car) => car.id === updatedCar.id);
+
+  cars.splice(index, 1, updatedCar);
+
+  writeFile(cars);
+
   res.status(200).json({
     message: "Car updated!",
+    car: updatedCar,
   });
 };
 
