@@ -1,17 +1,5 @@
 [
   {
-    "id": "1",
-    "brand": "Toyota",
-    "model": "Corolla",
-    "year": 2022,
-    "color": "Black",
-    "price": 15000,
-    "mileage": 45000,
-    "fuelType": "Gasoline",
-    "transmission": "Automatic",
-    "condition": "Used"
-  },
-  {
     "id": "2",
     "brand": "Honda",
     "model": "Civic",
@@ -47,7 +35,7 @@
     "transmission": "Manual",
     "condition": "New"
   },
-   {
+  {
     "id": "dc05dd65-10ea-4072-ba6c-5c4e21f08bb3",
     "brand": "Mitsubishi",
     "model": "Lancer Evo",
@@ -59,7 +47,7 @@
     "transmission": "Automatic",
     "condition": "Used"
   },
-    {
+  {
     "id": "ffe6988a-7634-41ca-9985-5edfc3883427",
     "brand": "Hyundai",
     "model": "i20",
@@ -71,7 +59,7 @@
     "transmission": "Automatic",
     "condition": "Used"
   },
-    {
+  {
     "id": "966112bc-dcf4-4e76-81ce-496d59ec1ff1",
     "brand": "Hyundai",
     "model": "i30",
@@ -82,5 +70,29 @@
     "fuelType": "Gasoline",
     "transmission": "Automatic",
     "condition": "Used"
+  },
+  {
+    "brand": "BMW",
+    "model": "X1",
+    "year": 2024,
+    "color": "White",
+    "price": 32000,
+    "mileage": 6000,
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "condition": "Used",
+    "id": "f78c0855-2aa3-4134-8c33-f00891ae7ce8"
+  },
+  {
+    "brand": "BMW",
+    "model": "X1",
+    "year": 2024,
+    "color": "White",
+    "price": 32000,
+    "mileage": 6000,
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "condition": "Used",
+    "id": "eccf2567-52da-45ae-9c16-7252ba3eef7d"
   }
 ]
